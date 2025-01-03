@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn38ukfc8l03q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6w028"]
+size = Vector2(1154, 42)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qrcfd"]
+orientation = 2
+
+[node name="Platform" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6w028")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(576, 20)
+mesh = SubResource("PlaneMesh_qrcfd")
